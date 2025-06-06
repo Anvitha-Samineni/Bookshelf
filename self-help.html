@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+<head>
+<style>
+body {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  background:radial-gradient(ellipse at bottom, #2b0033 0%, #0b0015 100%);
+  margin: 0;
+  font-family: 'Patrick Hand', cursive;
+  text-wrap:wrap
+}
+
+#topbar {
+  height: 160px;
+  width: 1250px;
+  background-color: #F5F5DC;
+  position: fixed;
+  top: -140px;
+  left: 180px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+  justify-content:space-around;
+  z-index: 10;
+}
+
+#sidebar {
+  height: 500px;
+  width: 200px;
+  background-color: #F5F5DC;
+  position: fixed;
+  left: -168px;
+  top: 90px;
+  border-radius: 3%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+#topbar:hover {
+  transform: translateY(120px);
+}
+
+#sidebar:hover {
+  transform: translateX(140px);
+}
+
+a {
+  font-size: 18px;
+  color: radial-gradient(ellipse at bottom, #2b0033 0%, #0b0015 100%);
+
+  text-decoration: none;
+  margin: 5px 0;
+}
+
+#bookdiv {
+  height: 400px;
+  width: 900px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid black;
+  margin: 200px auto;
+  background-color: white;
+  padding: 20px;
+ 
+  gap: 30px;
+}
+
+.book {
+  height: 400px;
+  width: 250px;
+  background-image: url("ikigai.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 10px;
+}
+
+.book-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 550px;
+}
+
+.book-info h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.book-info p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+</style>
+</head>
+
+<body>
+
+<div id="topbar">
+  <a href="contactus.html">CONTACT US</a>
+  <a href="aboutus.html">ABOUT US</a>
+  <a href="home.html">HOME</a>
+  <a href="MY_LIST.HTML">MY LIST</a>
+  
+</div>
+
+<div id="sidebar">
+  <a href="mainpage.html">FICTIONAL</a>
+  <a href="archaeology.html">ARCHAEOLOGY</a>
+  <a href="self-help.html">SELF-HELP</a>
+</div>
+
+<div id="bookdiv">
+  <div class="book"></div>
+  <div class="book-info">
+    <h2>IKIGAI</h2>
+    <p>
+     Ikigai: The Japanese Secret to a Long and Happy Life is a calming and thoughtful read that helps you find your purpose by blending ancient wisdom with modern insights. It encourages     finding joy in small things, doing what you love, and living with balance—ideal for students seeking direction or motivation.
+   </p>
+    <a href="ikigai.pdf"><H1>FULL STORY.....</H1></a>
+    <a href="MY_LIST.html"> Bookmark</a>
+ 
+  </div> </div>
+</div><br>
+
+
+</body>
+</html>

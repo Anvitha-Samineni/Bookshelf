@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<HTML>
+<HEAD>
+<TITLE>
+MY LIST
+</TITLE>
+<STYLE>
+body{background:radial-gradient(ellipse at bottom, #2b0033 0%, #0b0015 100%);display:flex;flex-direction:row;justify-content:center;align-items:center;align-content:center}
+#box{background-color:#F5F5DC;height:1000px;width:1400px;display:flex;justify-content:center;align-items:flex-start;flex-direction:row;flex-wrap:wrap}
+.subbox{background-color:#F5F5DC;height:86%;width:97%;display:flex;justify-content:flex-start;align-items:flex-start;flex-direction:column;border-style:solid;border-color:black;MARGIN-BOTTOM:10PX;flex-wrap:wrap}
+.subsubbox1{background-color:#F5F5DC;height:15%;width:100%;border-style:solid;border-color:black;flex-shrink:2;justify-content:space-between;display:flex;flex-direction:row}
+heading1{font-size:82px;font-weight:99px;font-family:'quicksand',serif;color:black}
+subheading{font-size:40px;font-weight:80px;font-family:'quicksand',serif;color:black}
+</STYLE>
+</HEAD>
+<BODY>
+<div id="box">
+<heading1>
+BOOK LIST
+</heading1>
+
+<div class="subbox">
+<div class="subsubbox1">
+<subheading>GENRE</SUBHEADING>
+<subheading>BOOK NAME</SUBHEADING>
+<subheading>BOOKMARK</SUBHEADING>
+</div>
+<div class="subsubbox1">
+<h2>FICTION</h2>
+<h2>HARRY POTTER:PHILOSOPHER'S STONE</h2>
+<h2><label for="bookmark1"></label>
+<input type="text" id="bookmark1" name="bookmark" placeholder="enter the Pg.No: "><input type="button" value="save1"  id="save1" style="height:25px;width:40px">
+<p id="displaySaved1" style="font-size: 20px; color: green; "></p>
+
+
+</h2>
+</div>
+<div class="subsubbox1">
+<h2>Archaeology</h2>
+<h2>India: A History </h2>
+<h2><label for="bookmark2"></label>
+<input type="text" id="bookmark2" name="bookmark" placeholder="enter the Pg.No: "><input type="button" value="save2"  id="save2" style="height:25px;width:40px">
+<p id="displaySaved2" style="font-size: 20px; color: green; "></p>
+
+
+</h2>
+
+
+
+
+</div>
+<div class="subsubbox1">
+<h2>SELF-HELP</h2>
+<h2>IKIGAI</h2>
+<h2><label for="bookmark3"></label>
+<input type="text" id="bookmark3" name="bookmark" placeholder="enter the Pg.No: "><input type="button" value="save3"  id="save3" style="height:25px;width:40px" >
+<p id="displaySaved3" style="font-size: 20px; color: green; "></p>
+
+
+</h2>
+
+
+
+
+</div>
+
+
+</div>
+
+
+
+</div>
+</body>
+<script>
+window.onload=function(){
+
+saved1=localStorage.getItem("bookmark1")
+display1=document.getElementById("displaySaved1")
+if(saved1){
+display1.textContent=`Restart from page.no:${saved1}`
+}
+savebutton1=document.getElementById("save1")
+
+
+
+savebutton1.onclick=function(){
+value1=document.getElementById("bookmark1").value
+localStorage.setItem("bookmark1",value1)
+display1=document.getElementById("displaySaved1")
+display1.textContent=`Restart from page.no:${value1}`
+}
+
+
+
+saved2=localStorage.getItem("bookmark2")
+display2=document.getElementById("displaySaved2")
+if(saved2){
+display2.textContent=`Restart from page.no:${saved2}`
+}
+savebutton2=document.getElementById("save2")
+
+
+
+savebutton2.onclick=function(){
+value2=document.getElementById("bookmark2").value
+localStorage.setItem("bookmark2",value2)
+display2=document.getElementById("displaySaved2")
+display2.textContent=`Restart from page.no:${value2}`
+}
+saved3=localStorage.getItem("bookmark3")
+display3=document.getElementById("displaySaved3")
+if(saved3){
+display3.textContent=`Restart from page.no:${saved3}`
+}
+savebutton3=document.getElementById("save3")
+
+
+
+savebutton3.onclick=function(){
+value3=document.getElementById("bookmark3").value
+localStorage.setItem("bookmark3",value3)
+display3=document.getElementById("displaySaved3")
+display3.textContent=`Restart from page.no:${value3}`
+}
+
+}
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+</HTML>
