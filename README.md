@@ -1,2 +1,2 @@
- <a href="https://anvitha-samineni.github.io/Bookshelf/">BOOKSHELF DEMO </a>
+ <a href="https://anvitha-samineni.github.io/Bookshelf/">BOOKSHELF DEMO </a><br>
 I have created an interactive bookshelf web application using HTML, CSS, and JavaScript. The structure and styling of the webpage are crafted with HTML and CSS to provide a clean and user-friendly interface. Using JavaScript, I implemented a dynamic list feature that allows users to save and store their current reading page, enabling seamless tracking of their progress. This functionality enhances the user experience by making it easy to manage and resume reading from where they left off.
